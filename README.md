@@ -92,7 +92,7 @@ Cmnd_Alias C_ZFS = \
 ## allow any user to use basic read-only ZFS commands
 ALL ALL = (root) NOPASSWD: C_ZFS
 ```
-If you don't know where your "userparameters" directory is, this is usually the `/etc/zabbix/zabbix_agentd.d` folderi. If in doubt, just look at your `zabbix_agentd.conf` file for the line begining by `Include=`, it will show where it is.
+If you don't know where your "userparameters" directory is, this is usually the `/etc/zabbix/zabbix_agentd.d` folder. If in doubt, just look at your `zabbix_agentd.conf` file for the line begining by `Include=`, it will show where it is.
 
 ### Restart zabbix agent
 Restart your zabbix agent so that it will load the new userparameters.
