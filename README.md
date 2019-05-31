@@ -24,7 +24,7 @@ Any Linux variant should work, tested version by myself include:
 
 About the ZoL version, this template is intended to be used by ZoL version 0.7.0 or superior but still works on the 0.6.x branch.
 
-# Installation
+# Installation on Zabbix server
 
 To use this template, follow those steps:
 
@@ -52,8 +52,22 @@ Expression: `([a-z-0-9]{64}$|[a-z-0-9]{64}-init$)`
 ![not docker ZFS dataset](images/zfs_not_docker.png)
 
 The second expression is to avoid this template to discover docker ZFS datasets because there can be *a lot* of them and they are not that useful to monitor as long as you monitor the parent dataset. This is especially true on host that create and destroy a lot of docker containers all day, creating dataset that disapear shortly after creation.
+## Create the Value mapping "ZFS zpool scrub status"
+Go to:
+- Administration
+- General
+- Value mapping
 
-## Prepare the server you want to monitor
+Then create a new value map named `ZFS zpool scrub status` with the following mappings:
+| Value | Mapped to |
+| ----- | --------- |
+| 0 | Scrub in progress |
+| 1 | No scrub in progress |
+
+![value_map](images/value_map.png)
+
+# Installation on the server you want to monitor
+## Prerequisites
 The server needs to have some very basic tools to run the user parameters:
 - awk
 - cat
@@ -62,7 +76,7 @@ The server needs to have some very basic tools to run the user parameters:
 - tail
 
 Usually, they are already installed and you don't have to install them.
-### Add the userparameters file on the servers you want to monitor
+## Add the userparameters file on the servers you want to monitor
 
 There are 2 different userparameters files in the "userparameters" directory of this repository.
 
@@ -93,7 +107,7 @@ ALL ALL = (root) NOPASSWD: C_ZFS
 ```
 If you don't know where your "userparameters" directory is, this is usually the `/etc/zabbix/zabbix_agentd.d` folder. If in doubt, just look at your `zabbix_agentd.conf` file for the line begining by `Include=`, it will show where it is.
 
-### Restart zabbix agent
+## Restart zabbix agent
 When you have added the template to you zabbix agent, restart it so that it will load the new userparameters.
 
 # Customization of alert level by server
