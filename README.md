@@ -64,7 +64,7 @@ Then create a new value map named `ZFS zpool scrub status` with the following ma
 | 0 | Scrub in progress |
 | 1 | No scrub in progress |
 
-![value_map](images/value_map.png)
+![value_map](images/value_map_1.png)
 
 # Installation on the server you want to monitor
 ## Prerequisites
