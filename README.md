@@ -96,3 +96,15 @@ If you don't know where your "userparameters" directory is, this is usually the 
 
 ### Restart zabbix agent
 When you have added the template to you zabbix agent, restart it so that it will load the new userparameters.
+
+# Customization of alert level by server
+This template includes macros to define when the triggers will fire.
+
+By default, you will find them on the macro page of this template:
+![macros](images/macros.png)
+
+If you change them here, they will apply to every hosts linked to this template, which may not be such a good idea. Prefer to change the macro on specific server if needed.
+
+You can see what how the macro are used by looking at the discovery rules, then "Trigger prototypes":
+![macros](images/trigger_prototypes_zpool.png)
+
