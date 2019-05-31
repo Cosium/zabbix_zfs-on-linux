@@ -2,14 +2,13 @@
 
 This template is a modified version of the original work done by pbergdolt and posted on the zabbix forum a while ago here: https://www.zabbix.com/forum/zabbix-cookbook/35336-zabbix-zfs-discovery-monitoring?t=43347 .
 
-I have maintained and modified this template over the year and the different version of ZoL on a large number of servers so I'm pretty confident that it works ;)
+I have maintained and modified this template over the years and the different versions of ZoL on a large number of servers so I'm pretty confident that it works ;)
 
 Tested Zabbix server version include 3.0, 3.4 and 4.0. The template shipped here is in 3.0 format to allow import to all those versions.
 
+This template will give you graph on basically everything, with included triggers for low disk space and other alarms. Disk space alarms can be customized using Zabbix macros.
 
-This template will give you graph on basically everything, with included trigger for low disk space and other alarms. Everything can be customized using Zabbix macros.
-
-Example of graphs:
+Example of graph:
 - Arc memory usage and hit rate:
 ![arc1](images/example_arc_1.png)
 - Complete breakdown of META and DATA usage:
