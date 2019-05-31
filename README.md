@@ -28,7 +28,7 @@ About the ZoL version, this template is intended to be used by ZoL version 0.7.0
 
 To use this template, follow those steps:
 
-## Create the needed regular expressions on the Zabbix server
+## Create the needed regular expressions
 On your zabbix server web UI, go to:
 - Administration
 - General
@@ -65,6 +65,9 @@ Then create a new value map named `ZFS zpool scrub status` with the following ma
 | 1 | No scrub in progress |
 
 ![value_map](images/value_map_1.png)
+
+## Import the template
+Import the template that is in the "template" directory of this repository.
 
 # Installation on the server you want to monitor
 ## Prerequisites
