@@ -114,7 +114,7 @@ If you don't know where your "userparameters" directory is, this is usually the 
 Once you have added the template, restart zabbix-agent so that it will load the new userparameters.
 
 # Customization of alert level by server
-This template includes macros to define when the triggers will fire.
+This template includes macros to define when the "low disk spaces" type triggers will fire.
 
 By default, you will find them on the macro page of this template:
 ![macros](images/macros.png)
