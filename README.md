@@ -59,6 +59,7 @@ Go to:
 - Value mapping
 
 Then create a new value map named `ZFS zpool scrub status` with the following mappings:
+
 | Value | Mapped to |
 | ----- | --------- |
 | 0 | Scrub in progress |
