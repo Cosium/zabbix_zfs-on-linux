@@ -67,7 +67,9 @@ Then create a new value map named `ZFS zpool scrub status` with the following ma
 ![value_map](images/value_map_1.png)
 
 ## Import the template
-Import the template that is in the "template" directory of this repository.
+Import the template that is in the "template" directory of this repository or download it directly with this link: 
+
+![template](template/zol_template.xml)
 
 # Installation on the server you want to monitor
 ## Prerequisites
