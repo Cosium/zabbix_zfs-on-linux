@@ -9,8 +9,13 @@ Tested Zabbix server version include 3.0, 3.4 and 4.0. The template shipped here
 
 This template will give you graph on basically everything, with included trigger for low disk space and other alarms. Everything can be customized using Zabbix macros.
 
-Example of graph:
-![arc](images/example_arc_1.png)
+Example of graphs:
+- Arc memory usage and hit rate:
+![arc1](images/example_arc_1.png)
+- Complete breakdown of META and DATA usage:
+![arc2](images/example_arc_2.png)
+- Dataset usage, with available space, and breakdown of used space with directly used space, space used by snapshots and space used by children:
+![dataset](images/example_dataset_usage_1.png)
 
 # Supported OS and ZoL version
 Any Linux variant should work, tested version by myself include:
@@ -33,9 +38,11 @@ On your zabbix server web UI, go to:
 Then Create 2 new regular expressions:
 - "ZFS fileset"
 Expression type: `/`
+![ZFS fileset](images/zfs_fileset.png)
 
 - "not docker ZFS dataset"
 Expression type: `([a-z-0-9]{64}$|[a-z-0-9]{64}-init$)`
+![not docker ZFS dataset](images/zfs_not_docker.png)
 
 The second expression is to avoid this template to discover docker ZFS datasets because there can be *a lot* of them and they are not that useful to monitor as long as you monitor the parent dataset. This is especially true on host that create and destroy a lot of docker container all day, creating dataset that disapear shortly after creation.
 
