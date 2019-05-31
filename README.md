@@ -62,7 +62,7 @@ The server needs to have some very basic tools to run the user parameters:
 - sed
 - tail
 
-Usually, they are already installed and you don't have to add them.
+Usually, they are already installed and you don't have to install them.
 ### Add the userparameters file on the servers you want to monitor
 
 There are 2 different userparameters files in the "userparameters" directory of this repository.
