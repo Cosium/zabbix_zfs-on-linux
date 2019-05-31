@@ -85,9 +85,9 @@ There are 2 different userparameters files in the "userparameters" directory of 
 
 One uses sudo to run and thus you must give zabbix the correct rights and the other doesn't use sudo.
 
-On recent ZFS on Linux versions (eg version 0.7.0+), you don't need sudo to run `zpool list` or `zfs list` so just install the file `ZoL_without_sudo.conf` and you are done.
+On recent ZFS on Linux versions (eg version 0.7.0+), you don't need sudo to run `zpool list` or `zfs list` so just install the file ![ZoL_without_sudo.conf](userparameters/ZoL_without_sudo.conf) and you are done.
 
-For older ZFS on Linux versions (eg version 0.6.x), you will need to add some sudo rights. On some distribution, ZoL already includes a file with all the necessary rights at `/etc/sudoers.d/zfs` but its content is commented, just remove the comments and any user will be able to list zfs datasets and pools. For convenience, here is the content of the file commented out:
+For older ZFS on Linux versions (eg version 0.6.x), you will need to add some sudo rights with the file ![ZoL_with_sudo.conf](userparameters/ZoL_with_sudo.conf). On some distribution, ZoL already includes a file with all the necessary rights at `/etc/sudoers.d/zfs` but its content is commented, just remove the comments and any user will be able to list zfs datasets and pools. For convenience, here is the content of the file commented out:
 ```
 ## Allow read-only ZoL commands to be called through sudo
 ## without a password. Remove the first '#' column to enable.
