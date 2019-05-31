@@ -52,7 +52,7 @@ Expression: `([a-z-0-9]{64}$|[a-z-0-9]{64}-init$)`
 
 ![not docker ZFS dataset](images/zfs_not_docker.png)
 
-The second expression is to avoid this template to discover docker ZFS datasets because there can be *a lot* of them and they are not that useful to monitor as long as you monitor the parent dataset. This is especially true on host that create and destroy a lot of docker container all day, creating dataset that disapear shortly after creation.
+The second expression is to avoid this template to discover docker ZFS datasets because there can be *a lot* of them and they are not that useful to monitor as long as you monitor the parent dataset. This is especially true on host that create and destroy a lot of docker containers all day, creating dataset that disapear shortly after creation.
 
 ## Prepare the server you want to monitor
 The server needs to have some very basic tools to run the user parameters:
