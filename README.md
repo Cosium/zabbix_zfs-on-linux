@@ -103,8 +103,8 @@ This template includes macros to define when the triggers will fire.
 By default, you will find them on the macro page of this template:
 ![macros](images/macros.png)
 
-If you change them here, they will apply to every hosts linked to this template, which may not be such a good idea. Prefer to change the macro on specific server if needed.
+If you change them here, they will apply to every hosts linked to this template, which may not be such a good idea. Prefer to change the macros on specific servers if needed.
 
-You can see what how the macro are used by looking at the discovery rules, then "Trigger prototypes":
+You can see how the macros are used by looking at the discovery rules, then "Trigger prototypes":
 ![macros](images/trigger_prototypes_zpool.png)
 
