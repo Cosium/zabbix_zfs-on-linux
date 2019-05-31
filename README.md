@@ -111,7 +111,7 @@ ALL ALL = (root) NOPASSWD: C_ZFS
 If you don't know where your "userparameters" directory is, this is usually the `/etc/zabbix/zabbix_agentd.d` folder. If in doubt, just look at your `zabbix_agentd.conf` file for the line begining by `Include=`, it will show where it is.
 
 ## Restart zabbix agent
-When you have added the template to you zabbix agent, restart it so that it will load the new userparameters.
+Once you have added the template, restart zabbix-agent so that it will load the new userparameters.
 
 # Customization of alert level by server
 This template includes macros to define when the triggers will fire.
