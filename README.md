@@ -125,3 +125,18 @@ If you change them here, they will apply to every hosts linked to this template,
 You can see how the macros are used by looking at the discovery rules, then "Trigger prototypes":
 ![macros](images/trigger_prototypes_zpool.png)
 
+# Important note about Zabbix active items
+
+This template uses Zabbix items of type `Zabbix agent (active)` (= active items). By default, most template uses `Zabbix agent` items (= passive items).
+
+If you want, you can convert all the items to `Zabbix agent` and everything will work, but you should really uses active items because those are way more scalable. The official documentation doesn't really make this point clear (https://www.zabbix.com/documentation/4.0/manual/appendix/items/activepassive) but active items are optimized: the agent asks the server for the list of items that the server wants, then send them by batch periodically.
+
+On the other hand, for passive items, the zabbix server must establish a connection for each items and ask for them, then wait for the anwser: this results in more CPU, memory and network consumption used by both the server and the agent.
+
+To make an active item work, you must ensure that you have a `ServerActive=your_zabbix_server_fqdn_or_ip` line in your agent config file (usually `/etc/zabbix/zabbix_agentd.conf`).
+
+You also need to configure the "Host Name" on the zabbix UI to be the same as the server output of the `hostname` command (you can always adjust the "Visible name" in the Zabbix UI to anything you want if needed) because the zabbix agent sends this information to the zabbix server. It basically tells the server "Hello, I am $(hostname), which items do you need from me?" so if there is a mismatch here, the server will most likely answer "I don't know you!" ;-)
+
+Beyond a certain point, depending on your hardware, you *will have to use active items*.
+
+An old but still relevant blog about high performance zabbix is available on https://blog.zabbix.com/scalable-zabbix-lessons-on-hitting-9400-nvps/2615/ .
