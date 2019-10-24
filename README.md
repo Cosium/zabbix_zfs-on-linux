@@ -18,7 +18,7 @@ Example of graph:
 
 # Supported OS and ZoL version
 Any Linux variant should work, tested version by myself include:
-- Debian 8 and 9
+- Debian 8, 9, 10
 - Ubuntu 16.04 and 18.04
 - CentOS 6 and 7
 
