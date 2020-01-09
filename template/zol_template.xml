@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2019-05-31T15:11:06Z</date>
+    <date>2020-01-09T20:44:09Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -20,6 +20,15 @@
             <applications>
                 <application>
                     <name>ZFS</name>
+                </application>
+                <application>
+                    <name>ZFS dataset</name>
+                </application>
+                <application>
+                    <name>ZFS vdev</name>
+                </application>
+                <application>
+                    <name>ZFS zpool</name>
                 </application>
             </applications>
             <items>
@@ -1047,13 +1056,13 @@
                                 <macro>{#FILESETNAME}</macro>
                                 <value>@ZFS fileset</value>
                                 <operator>8</operator>
-                                <formulaid>B</formulaid>
+                                <formulaid>A</formulaid>
                             </condition>
                             <condition>
                                 <macro>{#FILESETNAME}</macro>
                                 <value>@not docker ZFS dataset</value>
                                 <operator>8</operator>
-                                <formulaid>A</formulaid>
+                                <formulaid>B</formulaid>
                             </condition>
                         </conditions>
                     </filter>
@@ -1099,6 +1108,9 @@
                                 <application>
                                     <name>ZFS</name>
                                 </application>
+                                <application>
+                                    <name>ZFS dataset</name>
+                                </application>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
@@ -1142,6 +1154,9 @@
                             <applications>
                                 <application>
                                     <name>ZFS</name>
+                                </application>
+                                <application>
+                                    <name>ZFS dataset</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1187,6 +1202,9 @@
                                 <application>
                                     <name>ZFS</name>
                                 </application>
+                                <application>
+                                    <name>ZFS dataset</name>
+                                </application>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
@@ -1230,6 +1248,9 @@
                             <applications>
                                 <application>
                                     <name>ZFS</name>
+                                </application>
+                                <application>
+                                    <name>ZFS dataset</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1275,6 +1296,9 @@
                                 <application>
                                     <name>ZFS</name>
                                 </application>
+                                <application>
+                                    <name>ZFS dataset</name>
+                                </application>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
@@ -1319,6 +1343,9 @@
                                 <application>
                                     <name>ZFS</name>
                                 </application>
+                                <application>
+                                    <name>ZFS dataset</name>
+                                </application>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
@@ -1362,6 +1389,9 @@
                             <applications>
                                 <application>
                                     <name>ZFS</name>
+                                </application>
+                                <application>
+                                    <name>ZFS dataset</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1513,7 +1543,7 @@
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>7</lifetime>
+                    <lifetime>3</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
@@ -1554,6 +1584,9 @@
                             <applications>
                                 <application>
                                     <name>ZFS</name>
+                                </application>
+                                <application>
+                                    <name>ZFS zpool</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1599,6 +1632,9 @@
                                 <application>
                                     <name>ZFS</name>
                                 </application>
+                                <application>
+                                    <name>ZFS zpool</name>
+                                </application>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
@@ -1642,6 +1678,9 @@
                             <applications>
                                 <application>
                                     <name>ZFS</name>
+                                </application>
+                                <application>
+                                    <name>ZFS zpool</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1688,6 +1727,9 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                             <applications>
                                 <application>
                                     <name>ZFS</name>
+                                </application>
+                                <application>
+                                    <name>ZFS zpool</name>
                                 </application>
                             </applications>
                             <valuemap>
@@ -1822,8 +1864,328 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                     </graph_prototypes>
                     <host_prototypes/>
                 </discovery_rule>
+                <discovery_rule>
+                    <name>Zfs vdev discovery</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <snmp_oid/>
+                    <key>zfs.vdev.discovery</key>
+                    <delay>3600</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions/>
+                    </filter>
+                    <lifetime>3</lifetime>
+                    <description/>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>vdev {#VDEV}: CHECKSUM error counter</name>
+                            <type>7</type>
+                            <snmp_community/>
+                            <multiplier>0</multiplier>
+                            <snmp_oid/>
+                            <key>zfs.vdev.error_counter.cksum[{#VDEV}]</key>
+                            <delay>300</delay>
+                            <history>30</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description>This device has experienced an unrecoverable error. Determine if the device needs to be replaced.&#13;
+&#13;
+If yes, use 'zpool replace' to replace the device.&#13;
+&#13;
+If not, clear the error with 'zpool clear'.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>ZFS</name>
+                                </application>
+                                <application>
+                                    <name>ZFS vdev</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                            <application_prototypes/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>vdev {#VDEV}: READ error counter</name>
+                            <type>7</type>
+                            <snmp_community/>
+                            <multiplier>0</multiplier>
+                            <snmp_oid/>
+                            <key>zfs.vdev.error_counter.read[{#VDEV}]</key>
+                            <delay>300</delay>
+                            <history>30</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description>This device has experienced an unrecoverable error. Determine if the device needs to be replaced.&#13;
+&#13;
+If yes, use 'zpool replace' to replace the device.&#13;
+&#13;
+If not, clear the error with 'zpool clear'.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>ZFS</name>
+                                </application>
+                                <application>
+                                    <name>ZFS vdev</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                            <application_prototypes/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>vdev {#VDEV}: WRITE error counter</name>
+                            <type>7</type>
+                            <snmp_community/>
+                            <multiplier>0</multiplier>
+                            <snmp_oid/>
+                            <key>zfs.vdev.error_counter.write[{#VDEV}]</key>
+                            <delay>300</delay>
+                            <history>30</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description>This device has experienced an unrecoverable error. Determine if the device needs to be replaced.&#13;
+&#13;
+If yes, use 'zpool replace' to replace the device.&#13;
+&#13;
+If not, clear the error with 'zpool clear'.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>ZFS</name>
+                                </application>
+                                <application>
+                                    <name>ZFS vdev</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                            <application_prototypes/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>vdev {#VDEV}: total number of errors</name>
+                            <type>15</type>
+                            <snmp_community/>
+                            <multiplier>0</multiplier>
+                            <snmp_oid/>
+                            <key>zfs.vdev.error_total[{#VDEV}]</key>
+                            <delay>300</delay>
+                            <history>30</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params>last(zfs.vdev.error_counter.cksum[{#VDEV}])+last(zfs.vdev.error_counter.read[{#VDEV}])+last(zfs.vdev.error_counter.write[{#VDEV}])</params>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description>This device has experienced an unrecoverable error. Determine if the device needs to be replaced.&#13;
+&#13;
+If yes, use 'zpool replace' to replace the device.&#13;
+&#13;
+If not, clear the error with 'zpool clear'.</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>ZFS</name>
+                                </application>
+                                <application>
+                                    <name>ZFS vdev</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                            <application_prototypes/>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{ZFS on Linux:zfs.vdev.error_total[{#VDEV}].last()}&gt;0</expression>
+                            <name>vdev &quot;{#VDEV}&quot; has encountered {ITEM.VALUE} errors on {HOST.NAME}</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description>This device has experienced an unrecoverable error. Determine if the device needs to be replaced.&#13;
+&#13;
+If yes, use 'zpool replace' to replace the device.&#13;
+&#13;
+If not, clear the error with 'zpool clear'.&#13;
+&#13;
+You may also run a zpool scrub to check if some other undetected errors are present on this vdev.</description>
+                            <type>0</type>
+                            <dependencies/>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes>
+                        <graph_prototype>
+                            <name>ZFS vdev errors</name>
+                            <width>900</width>
+                            <height>200</height>
+                            <yaxismin>0.0000</yaxismin>
+                            <yaxismax>100.0000</yaxismax>
+                            <show_work_period>1</show_work_period>
+                            <show_triggers>1</show_triggers>
+                            <type>0</type>
+                            <show_legend>1</show_legend>
+                            <show_3d>0</show_3d>
+                            <percent_left>0.0000</percent_left>
+                            <percent_right>0.0000</percent_right>
+                            <ymin_type_1>1</ymin_type_1>
+                            <ymax_type_1>0</ymax_type_1>
+                            <ymin_item_1>0</ymin_item_1>
+                            <ymax_item_1>0</ymax_item_1>
+                            <graph_items>
+                                <graph_item>
+                                    <sortorder>0</sortorder>
+                                    <drawtype>0</drawtype>
+                                    <color>CC00CC</color>
+                                    <yaxisside>0</yaxisside>
+                                    <calc_fnc>2</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>ZFS on Linux</host>
+                                        <key>zfs.vdev.error_counter.cksum[{#VDEV}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>1</sortorder>
+                                    <drawtype>0</drawtype>
+                                    <color>F63100</color>
+                                    <yaxisside>0</yaxisside>
+                                    <calc_fnc>2</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>ZFS on Linux</host>
+                                        <key>zfs.vdev.error_counter.read[{#VDEV}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>2</sortorder>
+                                    <drawtype>0</drawtype>
+                                    <color>BBBB00</color>
+                                    <yaxisside>0</yaxisside>
+                                    <calc_fnc>2</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>ZFS on Linux</host>
+                                        <key>zfs.vdev.error_counter.write[{#VDEV}]</key>
+                                    </item>
+                                </graph_item>
+                            </graph_items>
+                        </graph_prototype>
+                    </graph_prototypes>
+                    <host_prototypes/>
+                </discovery_rule>
             </discovery_rules>
             <macros>
+                <macro>
+                    <macro>{$ZFS_ARC_META_ALERT}</macro>
+                    <value>90</value>
+                </macro>
                 <macro>
                     <macro>{$ZFS_AVERAGE_ALERT}</macro>
                     <value>90</value>
@@ -1971,8 +2333,8 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{ZFS on Linux:zfs.arcstats[arc_meta_used].last()}&gt;({ZFS on Linux:zfs.arcstats[arc_meta_limit].last()}*0.9)</expression>
-            <name>ZFS ARC meta size &gt; 90% meta max size on {HOST.NAME}</name>
+            <expression>{ZFS on Linux:zfs.arcstats[arc_meta_used].last()}&gt;({ZFS on Linux:zfs.arcstats[arc_meta_limit].last()}*0.01*{$ZFS_ARC_META_ALERT})</expression>
+            <name>ZFS ARC meta size &gt; {$ZFS_ARC_META_ALERT}% meta max size on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
