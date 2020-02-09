@@ -1720,7 +1720,7 @@
                             <publickey/>
                             <privatekey/>
                             <port/>
-                            <description>Detect if the pool is currently scrubing itself.&#13;
+                            <description>Detect if the pool is currently scrubbing itself.&#13;
 &#13;
 This is not a bad thing itself, but it slows down the entire pool and should be terminated when on production server during business hours if it causes a noticeable slowdown.</description>
                             <inventory_link>0</inventory_link>
@@ -1782,7 +1782,7 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{ZFS on Linux:zfs.zpool.scrub[{#POOLNAME}].max(12h)}=0</expression>
-                            <name>Zpool {#POOLNAME} is scrubing for more than 12h on {HOST.NAME}</name>
+                            <name>Zpool {#POOLNAME} is scrubbing for more than 12h on {HOST.NAME}</name>
                             <url/>
                             <status>0</status>
                             <priority>3</priority>
@@ -1790,14 +1790,14 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                             <type>0</type>
                             <dependencies>
                                 <dependency>
-                                    <name>Zpool {#POOLNAME} is scrubing for more than 24h on {HOST.NAME}</name>
+                                    <name>Zpool {#POOLNAME} is scrubbing for more than 24h on {HOST.NAME}</name>
                                     <expression>{ZFS on Linux:zfs.zpool.scrub[{#POOLNAME}].max(24h)}=0</expression>
                                 </dependency>
                             </dependencies>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{ZFS on Linux:zfs.zpool.scrub[{#POOLNAME}].max(24h)}=0</expression>
-                            <name>Zpool {#POOLNAME} is scrubing for more than 24h on {HOST.NAME}</name>
+                            <name>Zpool {#POOLNAME} is scrubbing for more than 24h on {HOST.NAME}</name>
                             <url/>
                             <status>0</status>
                             <priority>4</priority>
