@@ -2105,7 +2105,7 @@ If not, clear the error with 'zpool clear'.</description>
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>{ZFS on Linux:zfs.vdev.error_total[{#VDEV}].last()}&gt;0</expression>
-                            <name>vdev &quot;{#VDEV}&quot; has encountered {ITEM.VALUE} errors on {HOST.NAME}</name>
+                            <name>vdev {#VDEV} has encountered {ITEM.VALUE} errors on {HOST.NAME}</name>
                             <url/>
                             <status>0</status>
                             <priority>4</priority>
