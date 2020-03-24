@@ -2122,7 +2122,7 @@ You may also run a zpool scrub to check if some other undetected errors are pres
                     </trigger_prototypes>
                     <graph_prototypes>
                         <graph_prototype>
-                            <name>ZFS vdev errors</name>
+                            <name>ZFS vdev {#VDEV} errors</name>
                             <width>900</width>
                             <height>200</height>
                             <yaxismin>0.0000</yaxismin>
