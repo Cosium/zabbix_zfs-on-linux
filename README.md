@@ -4,7 +4,7 @@ This template is a modified version of the original work done by pbergdolt and p
 
 I have maintained and modified this template over the years and the different versions of ZoL on a large number of servers so I'm pretty confident that it works ;)
 
-Tested Zabbix server version include 3.0, 3.4 and 4.0. The template shipped here is in 3.0 format to allow import to all those versions.
+Tested Zabbix server version include 3.0, 3.4, 4.0 and 4.4. The template shipped here is in 3.0 format to allow import to all those versions.
 
 This template will give you graph on basically everything, which includes triggers for low disk space and other alarms. Disk space alarms can be customized using Zabbix macros.
 
