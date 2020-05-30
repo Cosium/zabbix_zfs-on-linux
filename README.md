@@ -19,7 +19,7 @@ Example of graph:
 # Supported OS and ZoL version
 Any Linux variant should work, tested version by myself include:
 - Debian 8, 9, 10
-- Ubuntu 16.04 and 18.04
+- Ubuntu 16.04, 18.04 and 20.04
 - CentOS 6 and 7
 
 About the ZoL version, this template is intended to be used by ZoL version 0.7.0 or superior but still works on the 0.6.x branch.
