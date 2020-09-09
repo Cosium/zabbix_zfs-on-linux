@@ -873,7 +873,7 @@
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
-                    <params>100*(last(zfs.arcstats[hits])/(last(zfs.arcstats[hits])+last(zfs.arcstats[misses])))</params>
+                    <params>100*(last(zfs.arcstats[hits])/(last(zfs.arcstats[hits])+count(zfs.arcstats[hits],#1,0)+last(zfs.arcstats[misses])))</params>
                     <ipmi_sensor/>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
