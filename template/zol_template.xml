@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2020-11-10T13:33:49Z</date>
+    <date>2020-11-10T15:09:05Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -38,7 +38,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>vfs.file.contents[/sys/module/zfs/version]</key>
-                    <delay>3600</delay>
+                    <delay>1h</delay>
                     <history>30d</history>
                     <trends>0</trends>
                     <status>0</status>
@@ -97,7 +97,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[arc_dnode_limit]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -156,7 +156,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[arc_meta_limit]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -215,7 +215,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[arc_meta_used]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -274,7 +274,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[bonus_size]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -333,7 +333,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[c_max]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -392,7 +392,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[c_min]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -451,7 +451,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[data_size]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -510,7 +510,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[dbuf_size]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -569,7 +569,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[dnode_size]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -628,7 +628,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[hdr_size]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -687,7 +687,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[hits]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -751,7 +751,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[metadata_size]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -810,7 +810,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[mfu_hits]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -874,7 +874,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[mfu_size]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -933,7 +933,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[misses]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -997,7 +997,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[mru_hits]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -1061,7 +1061,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[mru_size]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -1120,7 +1120,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats[size]</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -1179,7 +1179,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats_hit_ratio</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -1238,7 +1238,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.arcstats_total_read</key>
-                    <delay>60</delay>
+                    <delay>1m</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -1297,7 +1297,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.get.param[zfs_arc_dnode_limit_percent]</key>
-                    <delay>3600</delay>
+                    <delay>1h</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -1356,7 +1356,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.get.param[zfs_arc_meta_limit_percent]</key>
-                    <delay>3600</delay>
+                    <delay>1h</delay>
                     <history>30d</history>
                     <trends>365d</trends>
                     <status>0</status>
@@ -1417,7 +1417,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.fileset.discovery</key>
-                    <delay>1800</delay>
+                    <delay>30m</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
@@ -1462,7 +1462,7 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.get.compressratio[{#FILESETNAME}]</key>
-                            <delay>1800</delay>
+                            <delay>30m</delay>
                             <history>30d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -1530,7 +1530,7 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.get.fsinfo[{#FILESETNAME},available]</key>
-                            <delay>300</delay>
+                            <delay>5m</delay>
                             <history>30d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -1593,7 +1593,7 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.get.fsinfo[{#FILESETNAME},referenced]</key>
-                            <delay>300</delay>
+                            <delay>5m</delay>
                             <history>30d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -1656,7 +1656,7 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.get.fsinfo[{#FILESETNAME},usedbychildren]</key>
-                            <delay>300</delay>
+                            <delay>5m</delay>
                             <history>30d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -1719,7 +1719,7 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.get.fsinfo[{#FILESETNAME},usedbydataset]</key>
-                            <delay>3600</delay>
+                            <delay>1h</delay>
                             <history>30d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -1782,7 +1782,7 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.get.fsinfo[{#FILESETNAME},usedbysnapshots]</key>
-                            <delay>300</delay>
+                            <delay>5m</delay>
                             <history>30d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -1845,7 +1845,7 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.get.fsinfo[{#FILESETNAME},used]</key>
-                            <delay>300</delay>
+                            <delay>5m</delay>
                             <history>30d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -2061,7 +2061,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.pool.discovery</key>
-                    <delay>3600</delay>
+                    <delay>1h</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
@@ -2159,13 +2159,13 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.get.fsinfo[{#POOLNAME},available]</key>
-                            <delay>300</delay>
+                            <delay>5m</delay>
                             <history>30d</history>
                             <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
-                            <units>Bytes</units>
+                            <units>B</units>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2222,13 +2222,13 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.get.fsinfo[{#POOLNAME},used]</key>
-                            <delay>300</delay>
+                            <delay>5m</delay>
                             <history>30d</history>
                             <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
-                            <units>Bytes</units>
+                            <units>B</units>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2285,7 +2285,7 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.zpool.health[{#POOLNAME}]</key>
-                            <delay>300</delay>
+                            <delay>5m</delay>
                             <history>30d</history>
                             <trends>0</trends>
                             <status>0</status>
@@ -2632,7 +2632,7 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.zpool.scrub[{#POOLNAME}]</key>
-                            <delay>300</delay>
+                            <delay>5m</delay>
                             <history>30d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -2882,7 +2882,7 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                     <snmp_community/>
                     <snmp_oid/>
                     <key>zfs.vdev.discovery</key>
-                    <delay>3600</delay>
+                    <delay>1h</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
@@ -2914,7 +2914,7 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.vdev.error_counter.cksum[{#VDEV}]</key>
-                            <delay>300</delay>
+                            <delay>5m</delay>
                             <history>30d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -2981,7 +2981,7 @@ If not, clear the error with 'zpool clear'.</description>
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.vdev.error_counter.read[{#VDEV}]</key>
-                            <delay>300</delay>
+                            <delay>5m</delay>
                             <history>30d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -3048,7 +3048,7 @@ If not, clear the error with 'zpool clear'.</description>
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.vdev.error_counter.write[{#VDEV}]</key>
-                            <delay>300</delay>
+                            <delay>5m</delay>
                             <history>30d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -3115,7 +3115,7 @@ If not, clear the error with 'zpool clear'.</description>
                             <snmp_community/>
                             <snmp_oid/>
                             <key>zfs.vdev.error_total[{#VDEV}]</key>
-                            <delay>300</delay>
+                            <delay>5m</delay>
                             <history>30d</history>
                             <trends>365d</trends>
                             <status>0</status>
