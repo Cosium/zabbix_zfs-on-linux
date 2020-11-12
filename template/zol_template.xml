@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2020-11-12T14:35:06Z</date>
+    <date>2020-11-12T14:41:00Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -2903,7 +2903,7 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                             <yaxismax>100.0000</yaxismax>
                             <show_work_period>1</show_work_period>
                             <show_triggers>1</show_triggers>
-                            <type>1</type>
+                            <type>0</type>
                             <show_legend>1</show_legend>
                             <show_3d>0</show_3d>
                             <percent_left>0.0000</percent_left>
@@ -2916,7 +2916,7 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                                 <graph_item>
                                     <sortorder>1</sortorder>
                                     <drawtype>0</drawtype>
-                                    <color>66BB6A</color>
+                                    <color>5C6BC0</color>
                                     <yaxisside>0</yaxisside>
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
@@ -2928,7 +2928,7 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                                 <graph_item>
                                     <sortorder>2</sortorder>
                                     <drawtype>0</drawtype>
-                                    <color>FF8A65</color>
+                                    <color>EF5350</color>
                                     <yaxisside>0</yaxisside>
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
@@ -3003,8 +3003,8 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                             <graph_items>
                                 <graph_item>
                                     <sortorder>1</sortorder>
-                                    <drawtype>2</drawtype>
-                                    <color>66BB6A</color>
+                                    <drawtype>0</drawtype>
+                                    <color>5C6BC0</color>
                                     <yaxisside>0</yaxisside>
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
@@ -3016,7 +3016,7 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                                 <graph_item>
                                     <sortorder>2</sortorder>
                                     <drawtype>2</drawtype>
-                                    <color>FF8A65</color>
+                                    <color>EF5350</color>
                                     <yaxisside>0</yaxisside>
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
