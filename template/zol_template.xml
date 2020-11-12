@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2020-11-12T13:34:58Z</date>
+    <date>2020-11-12T14:41:00Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -20,6 +20,9 @@
             <applications>
                 <application>
                     <name>ZFS</name>
+                </application>
+                <application>
+                    <name>ZFS ARC</name>
                 </application>
                 <application>
                     <name>ZFS dataset</name>
@@ -125,6 +128,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -183,6 +189,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -243,6 +252,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -301,6 +313,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -361,6 +376,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -419,6 +437,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -479,6 +500,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -537,6 +561,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -597,6 +624,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -656,6 +686,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -714,6 +747,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -779,6 +815,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -837,6 +876,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -902,6 +944,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -960,6 +1005,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1025,6 +1073,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -1089,6 +1140,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -1147,6 +1201,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1207,6 +1264,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -1265,6 +1325,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1325,6 +1388,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -1383,6 +1449,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -2119,6 +2188,9 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
+                                    <name>ZFS</name>
+                                </application>
+                                <application>
                                     <name>ZFS zpool</name>
                                 </application>
                             </applications>
@@ -2374,6 +2446,9 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
+                                    <name>ZFS</name>
+                                </application>
+                                <application>
                                     <name>ZFS zpool</name>
                                 </application>
                             </applications>
@@ -2444,6 +2519,9 @@
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
+                                <application>
+                                    <name>ZFS</name>
+                                </application>
                                 <application>
                                     <name>ZFS zpool</name>
                                 </application>
@@ -2516,6 +2594,9 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
+                                    <name>ZFS</name>
+                                </application>
+                                <application>
                                     <name>ZFS zpool</name>
                                 </application>
                             </applications>
@@ -2586,6 +2667,9 @@
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
+                                <application>
+                                    <name>ZFS</name>
+                                </application>
                                 <application>
                                     <name>ZFS zpool</name>
                                 </application>
@@ -2819,7 +2903,7 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                             <yaxismax>100.0000</yaxismax>
                             <show_work_period>1</show_work_period>
                             <show_triggers>1</show_triggers>
-                            <type>1</type>
+                            <type>0</type>
                             <show_legend>1</show_legend>
                             <show_3d>0</show_3d>
                             <percent_left>0.0000</percent_left>
@@ -2832,7 +2916,7 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                                 <graph_item>
                                     <sortorder>1</sortorder>
                                     <drawtype>0</drawtype>
-                                    <color>66BB6A</color>
+                                    <color>5C6BC0</color>
                                     <yaxisside>0</yaxisside>
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
@@ -2844,7 +2928,7 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                                 <graph_item>
                                     <sortorder>2</sortorder>
                                     <drawtype>0</drawtype>
-                                    <color>FF8A65</color>
+                                    <color>EF5350</color>
                                     <yaxisside>0</yaxisside>
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
@@ -2919,8 +3003,8 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                             <graph_items>
                                 <graph_item>
                                     <sortorder>1</sortorder>
-                                    <drawtype>2</drawtype>
-                                    <color>66BB6A</color>
+                                    <drawtype>0</drawtype>
+                                    <color>5C6BC0</color>
                                     <yaxisside>0</yaxisside>
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
@@ -2932,7 +3016,7 @@ This is not a bad thing itself, but it slows down the entire pool and should be 
                                 <graph_item>
                                     <sortorder>2</sortorder>
                                     <drawtype>2</drawtype>
-                                    <color>FF8A65</color>
+                                    <color>EF5350</color>
                                     <yaxisside>0</yaxisside>
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
@@ -3497,37 +3581,15 @@ You may also run a zpool scrub to check if some other undetected errors are pres
                     </screen_items>
                 </screen>
                 <screen>
-                    <name>ZFS zpool performance</name>
-                    <hsize>2</hsize>
+                    <name>ZFS zpools</name>
+                    <hsize>3</hsize>
                     <vsize>1</vsize>
                     <screen_items>
                         <screen_item>
                             <resourcetype>20</resourcetype>
-                            <width>500</width>
+                            <width>400</width>
                             <height>100</height>
                             <x>0</x>
-                            <y>0</y>
-                            <colspan>1</colspan>
-                            <rowspan>1</rowspan>
-                            <elements>0</elements>
-                            <valign>0</valign>
-                            <halign>0</halign>
-                            <style>0</style>
-                            <url/>
-                            <dynamic>0</dynamic>
-                            <sort_triggers>0</sort_triggers>
-                            <resource>
-                                <name>ZFS zpool {#POOLNAME} throughput</name>
-                                <host>ZFS on Linux</host>
-                            </resource>
-                            <max_columns>3</max_columns>
-                            <application/>
-                        </screen_item>
-                        <screen_item>
-                            <resourcetype>20</resourcetype>
-                            <width>500</width>
-                            <height>100</height>
-                            <x>1</x>
                             <y>0</y>
                             <colspan>1</colspan>
                             <rowspan>1</rowspan>
@@ -3542,7 +3604,51 @@ You may also run a zpool scrub to check if some other undetected errors are pres
                                 <name>ZFS zpool {#POOLNAME} IOPS</name>
                                 <host>ZFS on Linux</host>
                             </resource>
-                            <max_columns>3</max_columns>
+                            <max_columns>1</max_columns>
+                            <application/>
+                        </screen_item>
+                        <screen_item>
+                            <resourcetype>20</resourcetype>
+                            <width>400</width>
+                            <height>100</height>
+                            <x>1</x>
+                            <y>0</y>
+                            <colspan>1</colspan>
+                            <rowspan>1</rowspan>
+                            <elements>0</elements>
+                            <valign>0</valign>
+                            <halign>0</halign>
+                            <style>0</style>
+                            <url/>
+                            <dynamic>0</dynamic>
+                            <sort_triggers>0</sort_triggers>
+                            <resource>
+                                <name>ZFS zpool {#POOLNAME} throughput</name>
+                                <host>ZFS on Linux</host>
+                            </resource>
+                            <max_columns>1</max_columns>
+                            <application/>
+                        </screen_item>
+                        <screen_item>
+                            <resourcetype>20</resourcetype>
+                            <width>400</width>
+                            <height>100</height>
+                            <x>2</x>
+                            <y>0</y>
+                            <colspan>1</colspan>
+                            <rowspan>1</rowspan>
+                            <elements>0</elements>
+                            <valign>0</valign>
+                            <halign>0</halign>
+                            <style>0</style>
+                            <url/>
+                            <dynamic>0</dynamic>
+                            <sort_triggers>0</sort_triggers>
+                            <resource>
+                                <name>ZFS zpool {#POOLNAME} space usage</name>
+                                <host>ZFS on Linux</host>
+                            </resource>
+                            <max_columns>1</max_columns>
                             <application/>
                         </screen_item>
                     </screen_items>
