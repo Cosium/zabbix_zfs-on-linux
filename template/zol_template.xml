@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2020-11-12T13:47:24Z</date>
+    <date>2020-11-12T14:35:06Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -3581,37 +3581,15 @@ You may also run a zpool scrub to check if some other undetected errors are pres
                     </screen_items>
                 </screen>
                 <screen>
-                    <name>ZFS zpool performance</name>
-                    <hsize>2</hsize>
+                    <name>ZFS zpools</name>
+                    <hsize>3</hsize>
                     <vsize>1</vsize>
                     <screen_items>
                         <screen_item>
                             <resourcetype>20</resourcetype>
-                            <width>500</width>
+                            <width>400</width>
                             <height>100</height>
                             <x>0</x>
-                            <y>0</y>
-                            <colspan>1</colspan>
-                            <rowspan>1</rowspan>
-                            <elements>0</elements>
-                            <valign>0</valign>
-                            <halign>0</halign>
-                            <style>0</style>
-                            <url/>
-                            <dynamic>0</dynamic>
-                            <sort_triggers>0</sort_triggers>
-                            <resource>
-                                <name>ZFS zpool {#POOLNAME} throughput</name>
-                                <host>ZFS on Linux</host>
-                            </resource>
-                            <max_columns>3</max_columns>
-                            <application/>
-                        </screen_item>
-                        <screen_item>
-                            <resourcetype>20</resourcetype>
-                            <width>500</width>
-                            <height>100</height>
-                            <x>1</x>
                             <y>0</y>
                             <colspan>1</colspan>
                             <rowspan>1</rowspan>
@@ -3626,7 +3604,51 @@ You may also run a zpool scrub to check if some other undetected errors are pres
                                 <name>ZFS zpool {#POOLNAME} IOPS</name>
                                 <host>ZFS on Linux</host>
                             </resource>
-                            <max_columns>3</max_columns>
+                            <max_columns>1</max_columns>
+                            <application/>
+                        </screen_item>
+                        <screen_item>
+                            <resourcetype>20</resourcetype>
+                            <width>400</width>
+                            <height>100</height>
+                            <x>1</x>
+                            <y>0</y>
+                            <colspan>1</colspan>
+                            <rowspan>1</rowspan>
+                            <elements>0</elements>
+                            <valign>0</valign>
+                            <halign>0</halign>
+                            <style>0</style>
+                            <url/>
+                            <dynamic>0</dynamic>
+                            <sort_triggers>0</sort_triggers>
+                            <resource>
+                                <name>ZFS zpool {#POOLNAME} throughput</name>
+                                <host>ZFS on Linux</host>
+                            </resource>
+                            <max_columns>1</max_columns>
+                            <application/>
+                        </screen_item>
+                        <screen_item>
+                            <resourcetype>20</resourcetype>
+                            <width>400</width>
+                            <height>100</height>
+                            <x>2</x>
+                            <y>0</y>
+                            <colspan>1</colspan>
+                            <rowspan>1</rowspan>
+                            <elements>0</elements>
+                            <valign>0</valign>
+                            <halign>0</halign>
+                            <style>0</style>
+                            <url/>
+                            <dynamic>0</dynamic>
+                            <sort_triggers>0</sort_triggers>
+                            <resource>
+                                <name>ZFS zpool {#POOLNAME} space usage</name>
+                                <host>ZFS on Linux</host>
+                            </resource>
+                            <max_columns>1</max_columns>
                             <application/>
                         </screen_item>
                     </screen_items>
