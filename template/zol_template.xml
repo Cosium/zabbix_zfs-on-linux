@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2020-11-12T13:34:58Z</date>
+    <date>2020-11-12T13:47:24Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -20,6 +20,9 @@
             <applications>
                 <application>
                     <name>ZFS</name>
+                </application>
+                <application>
+                    <name>ZFS ARC</name>
                 </application>
                 <application>
                     <name>ZFS dataset</name>
@@ -125,6 +128,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -183,6 +189,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -243,6 +252,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -301,6 +313,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -361,6 +376,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -419,6 +437,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -479,6 +500,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -537,6 +561,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -597,6 +624,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -656,6 +686,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -714,6 +747,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -779,6 +815,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -837,6 +876,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -902,6 +944,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -960,6 +1005,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1025,6 +1073,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -1089,6 +1140,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -1147,6 +1201,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1207,6 +1264,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -1265,6 +1325,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1325,6 +1388,9 @@
                         <application>
                             <name>ZFS</name>
                         </application>
+                        <application>
+                            <name>ZFS ARC</name>
+                        </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
@@ -1383,6 +1449,9 @@
                     <applications>
                         <application>
                             <name>ZFS</name>
+                        </application>
+                        <application>
+                            <name>ZFS ARC</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -2119,6 +2188,9 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
+                                    <name>ZFS</name>
+                                </application>
+                                <application>
                                     <name>ZFS zpool</name>
                                 </application>
                             </applications>
@@ -2374,6 +2446,9 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
+                                    <name>ZFS</name>
+                                </application>
+                                <application>
                                     <name>ZFS zpool</name>
                                 </application>
                             </applications>
@@ -2444,6 +2519,9 @@
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
+                                <application>
+                                    <name>ZFS</name>
+                                </application>
                                 <application>
                                     <name>ZFS zpool</name>
                                 </application>
@@ -2516,6 +2594,9 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
+                                    <name>ZFS</name>
+                                </application>
+                                <application>
                                     <name>ZFS zpool</name>
                                 </application>
                             </applications>
@@ -2586,6 +2667,9 @@
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
+                                <application>
+                                    <name>ZFS</name>
+                                </application>
                                 <application>
                                     <name>ZFS zpool</name>
                                 </application>
