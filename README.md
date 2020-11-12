@@ -4,17 +4,21 @@ This template is a modified version of the original work done by pbergdolt and p
 
 I have maintained and modified this template over the years and the different versions of ZoL on a large number of servers so I'm pretty confident that it works ;)
 
+Thanks to external contributors, this template was extended and is now more complete than ever. However, if you find a metric that you need and is missing, don't hesitate to open a ticket or even better, to create a PR!
+
 Tested Zabbix server version include 4.0, 4.4, 5.0 and 5.2 . The template shipped here is in 4.0 format to allow import to all those versions.
 
-This template will give you graph on basically everything, which includes triggers for low disk space and other alarms. Disk space alarms can be customized using Zabbix macros.
+This template will give you screens and graphs for memory usage, zpool usage and performance, dataset usage, etc. It includes triggers for low disk space (customizable via Zabbix own macros), disks errors, etc.
 
-Example of graph:
+Example of graphs:
 - Arc memory usage and hit rate:
 ![arc1](images/example_arc_1.png)
 - Complete breakdown of META and DATA usage:
 ![arc2](images/example_arc_2.png)
 - Dataset usage, with available space, and breakdown of used space with directly used space, space used by snapshots and space used by children:
 ![dataset](images/example_dataset_usage_1.png)
+- Zpool IO throughput:
+![throughput](images/example_zfs_throughput.png)
 
 # Supported OS and ZoL version
 Any Linux variant should work, tested version by myself include:
