@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2020-11-12T14:41:00Z</date>
+    <date>2021-01-04T21:27:59Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -11,7 +11,9 @@
         <template>
             <template>ZFS on Linux</template>
             <name>ZFS on Linux</name>
-            <description/>
+            <description>OpenZFS (formerly ZFS on Linux) template.&#13;
+&#13;
+Home of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
             <groups>
                 <group>
                     <name>Templates</name>
@@ -36,7 +38,7 @@
             </applications>
             <items>
                 <item>
-                    <name>ZFS on Linux version</name>
+                    <name>OpenZFS version</name>
                     <type>7</type>
                     <snmp_community/>
                     <snmp_oid/>
@@ -1507,23 +1509,10 @@
                     <filter>
                         <evaltype>1</evaltype>
                         <formula/>
-                        <conditions>
-                            <condition>
-                                <macro>{#FILESETNAME}</macro>
-                                <value>@ZFS fileset</value>
-                                <operator>8</operator>
-                                <formulaid>A</formulaid>
-                            </condition>
-                            <condition>
-                                <macro>{#FILESETNAME}</macro>
-                                <value>@not docker ZFS dataset</value>
-                                <operator>8</operator>
-                                <formulaid>B</formulaid>
-                            </condition>
-                        </conditions>
+                        <conditions/>
                     </filter>
                     <lifetime>2d</lifetime>
-                    <description>Discover ZFS dataset. Dataset names must contain a &quot;/&quot; else it's a zpool.</description>
+                    <description>Discover ZFS dataset.</description>
                     <item_prototypes>
                         <item_prototype>
                             <name>Zfs dataset $1 compressratio</name>
@@ -3661,7 +3650,7 @@ You may also run a zpool scrub to check if some other undetected errors are pres
             <expression>{ZFS on Linux:vfs.file.contents[/sys/module/zfs/version].diff(0)}&gt;0</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Version of ZoL is now {ITEM.VALUE} on {HOST.NAME}</name>
+            <name>Version of OpenZFS is now {ITEM.VALUE} on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
