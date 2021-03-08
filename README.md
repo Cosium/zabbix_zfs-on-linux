@@ -107,9 +107,9 @@ You can see how the macros are used by looking at the discovery rules, then "Tri
 
 # Important note about Zabbix active items
 
-This template uses Zabbix items of type `Zabbix agent (active)` (= active items). By default, most template uses `Zabbix agent` items (= passive items).
+'zol_template.xml' uses Zabbix items of type `Zabbix agent (active)` (= active items). By default, most template uses `Zabbix agent` items (= passive items).
 
-If you want, you can convert all the items to `Zabbix agent` and everything will work, but you should really uses active items because those are way more scalable. The official documentation doesn't really make this point clear (https://www.zabbix.com/documentation/4.0/manual/appendix/items/activepassive) but active items are optimized: the agent asks the server for the list of items that the server wants, then send them by batch periodically.
+If you want, you can convert all the items to `Zabbix agent` or import 'zol_template_passive.xml', but you should really uses active items because those are way more scalable. The official documentation doesn't really make this point clear (https://www.zabbix.com/documentation/4.0/manual/appendix/items/activepassive) but active items are optimized: the agent asks the server for the list of items that the server wants, then send them by batch periodically.
 
 On the other hand, for passive items, the zabbix server must establish a connection for each items and ask for them, then wait for the anwser: this results in more CPU, memory and network consumption used by both the server and the agent.
 
