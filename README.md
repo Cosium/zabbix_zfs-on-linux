@@ -1,5 +1,9 @@
 # Monitor ZFS on Linux on Zabbix
 
+
+**DISCLAMER:** *Here is a fork unless my pool request wasn't approved for the next reasons: https://github.com/Cosium/zabbix_zfs-on-linux/pull/30*
+
+
 This template is a modified version of the original work done by pbergdolt and posted on the zabbix forum a while ago here: https://www.zabbix.com/forum/zabbix-cookbook/35336-zabbix-zfs-discovery-monitoring?t=43347 . Also the original home of this variant was on https://share.zabbix.com/zfs-on-linux .
 
 I have maintained and modified this template over the years and the different versions of ZoL on a large number of servers so I'm pretty confident that it works ;)
@@ -107,9 +111,9 @@ You can see how the macros are used by looking at the discovery rules, then "Tri
 
 # Important note about Zabbix active items
 
-This template uses Zabbix items of type `Zabbix agent (active)` (= active items). By default, most template uses `Zabbix agent` items (= passive items).
+'zol_template.xml' uses Zabbix items of type `Zabbix agent (active)` (= active items). By default, most template uses `Zabbix agent` items (= passive items).
 
-If you want, you can convert all the items to `Zabbix agent` and everything will work, but you should really uses active items because those are way more scalable. The official documentation doesn't really make this point clear (https://www.zabbix.com/documentation/4.0/manual/appendix/items/activepassive) but active items are optimized: the agent asks the server for the list of items that the server wants, then send them by batch periodically.
+If you want, you can convert all the items to `Zabbix agent` or import 'zol_template_passive.xml', but you should really uses active items because those are way more scalable. The official documentation doesn't really make this point clear (https://www.zabbix.com/documentation/4.0/manual/appendix/items/activepassive) but active items are optimized: the agent asks the server for the list of items that the server wants, then send them by batch periodically.
 
 On the other hand, for passive items, the zabbix server must establish a connection for each items and ask for them, then wait for the anwser: this results in more CPU, memory and network consumption used by both the server and the agent.
 
