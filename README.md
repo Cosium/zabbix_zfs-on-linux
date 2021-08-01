@@ -6,7 +6,7 @@ I have maintained and modified this template over the years and the different ve
 
 Thanks to external contributors, this template was extended and is now more complete than ever. However, if you find a metric that you need and is missing, don't hesitate to open a ticket or even better, to create a PR!
 
-Tested Zabbix server version include 4.0, 4.4, 5.0 and 5.2 . The template shipped here is in 4.0 format to allow import to all those versions.
+Tested Zabbix server version include 4.0, 4.4, 5.0, 5.2 and 5.4 . The template shipped here is in 4.0 format to allow import to all those versions.
 
 This template will give you screens and graphs for memory usage, zpool usage and performance, dataset usage, etc. It includes triggers for low disk space (customizable via Zabbix own macros), disks errors, etc.
 
